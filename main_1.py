@@ -1,4 +1,3 @@
-from fileinput import filename
 from pprint import pprint
 import requests
 from yadisk import YandexDisk
@@ -40,4 +39,4 @@ class YandexDisk:
 if __name__ == '__main__':
     ya = YandexDisk(token='y0_AgAAAAAGaB6ZAADLWwAAAADdcdbVuGoqVnATQiGT73zE7oSApKxYKu4')
     ya.upload_file_to_disk(r"test.txt", filename='test.txt')
-    print(ya.get_files_list())
+    pprint(ya.get_files_list())
